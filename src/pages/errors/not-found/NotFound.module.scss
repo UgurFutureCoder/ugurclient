@@ -1,0 +1,14 @@
+.error_page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Carme;
+  font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+}
+
+.path_name {
+  text-decoration: underline;
+}
