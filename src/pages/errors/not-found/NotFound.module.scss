@@ -35,3 +35,26 @@
     font-size: 20px;
   }
 }
+
+@media (max-height: 739px) {
+  .error_page {
+    scale: 0.8;
+  }
+}
+@media (max-width: 905px) {
+  .error_page {
+    scale: 0.8;
+  }
+}
+
+
+@media (max-height: 605px) {
+  .error_page {
+    scale: 0.6;
+  }
+}
+@media (max-width: 673px) {
+  .error_page {
+    scale: 0.5;
+  }
+}
