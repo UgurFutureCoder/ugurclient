@@ -2,13 +2,36 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
-  font-family: Carme;
-  font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
+.error_message {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
 }
 
 .path_name {
   text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 33px;
+  gap: 35px;
+
+  button {
+    padding: 15px 63px;
+    border: 1px solid #DEDEDE;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+
+    font-family: Inter;
+    color: black;
+    font-size: 20px;
+  }
 }
