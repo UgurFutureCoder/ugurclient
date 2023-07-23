@@ -10,7 +10,7 @@ export const SignIn: FC = () => {
             <div className={s.sign_in_container}>
                 <div className={s.left_container}>
                     <img className={s.logo} src={require('../../assets/Authorization/sign-in/Frame 1.svg').default} alt=""/>
-                    <article className={s.left_content}>
+                    <div className={s.left_content}>
                         <div className={s.top_content}>
                             <p className={s.header}>Get Started Now</p>
                             <p className={s.title}>Enter your credentials to access your account</p>
@@ -34,7 +34,7 @@ export const SignIn: FC = () => {
                             <button className={s.button_login}>Login</button>
                             <p className={s.go_sign_up}>Have an account? <Link to='signUp'>Sign Up.</Link></p>
                         </form>
-                    </article>
+                    </div>
                 </div>
                 <img className={s.right_content_img} src={require('../../assets/Authorization/sign-in/pexels-any-lane-5727885 1.svg').default} alt=""/>
             </div>
