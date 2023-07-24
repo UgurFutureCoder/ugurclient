@@ -16,12 +16,14 @@ export const NotFound: FC = () => {
 
   return (
     <section className={s.error_page}>
-        <img src={require('../../../assets/errors/not-found/Frame 1 (1).svg').default} alt=""/>
-        <img src={require('../../../assets/errors/not-found/404 Error-pana 1.svg').default} alt=""/>
-        <p className={s.error_message}>Sorry, but we couldn’t found path <span className={s.path_name}>{location.pathname}</span></p>
-        <div className={s.buttons}>
-            <button onClick={() => goBack()}>Go Back</button>
-            <button onClick={() => goHome()}>Go Home</button>
+        <div className={s.error_container}>
+            <img src={require('../../../assets/errors/not-found/Frame 1 (1).svg').default} alt=""/>
+            <img src={require('../../../assets/errors/not-found/404 Error-pana 1.svg').default} alt=""/>
+            <p className={s.error_message}>Sorry, but we couldn’t found path <span className={s.path_name}>{location.pathname}</span></p>
+            <div className={s.buttons}>
+                <button onClick={() => goBack()}>Go Back</button>
+                <button onClick={() => goHome()}>Go Home</button>
+            </div>
         </div>
     </section>
   )
