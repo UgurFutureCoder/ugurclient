@@ -205,3 +205,12 @@
     margin-top: 30px;
   }
 }
+
+@media (max-width: 424px) {
+
+  .alternative_auth {
+    button {
+      padding: 12px;
+    }
+  }
+}
