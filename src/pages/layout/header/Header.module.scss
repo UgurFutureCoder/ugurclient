@@ -102,3 +102,144 @@ header {
     color: white;
   }
 }
+
+.author_panel {
+  margin-left: 41px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.notifications {
+  position: relative;
+
+  svg path {
+    transition-duration: .3s;
+  }
+
+  &:hover {
+    svg path {
+      fill: #FF8A00;
+    }
+  }
+}
+
+.notifications_length {
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  background-color: #FA1818;
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 4px 4px;
+
+  color: white;
+  font-family: Inter;
+  font-size: 10px;
+}
+
+.create_post {
+  background-color: white;
+  border: 2px solid #FF8A00;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition-duration: .2s;
+
+  font-family: Carme;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+
+  &:hover {
+    background-color: #FF8A00;
+    color: white;
+  }
+}
+
+.profile_link {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.burger {
+  position: relative;
+  margin-left: auto;
+}
+
+.burger_button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FF8A00;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    display: flex;
+    background-color: #FF8A00;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 20px;
+    height: 1.5px;
+    transition-duration: .2s;
+
+    &::before, &::after{
+      position: absolute;
+      content: "";
+      background-color: #FF8A00;
+      border-color: transparent;
+      border-radius: 10px;
+      width: 20px;
+      height: 2px;
+      transition-duration: .2s;
+    }
+
+    &::before {
+      bottom: 6px;
+    }
+
+    &::after {
+      top: 6px;
+    }
+  }
+}
+
+.burger_button_active {
+  span {
+    background-color: white;
+    &::before {
+      bottom: -0.3px;
+      rotate: -45deg;
+      height: 1.5px;
+    }
+
+    &::after {
+      top: -0.3px;
+      rotate: 45deg;
+      height: 1.5px;
+    }
+  }
+}
+
+@media (max-width: 955px) {
+  .author_panel, .auth_links, .lang {
+    display: none;
+  }
+}
