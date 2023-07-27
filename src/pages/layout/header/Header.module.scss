@@ -1,0 +1,104 @@
+header {
+  width: 100%;
+  max-width: 100%;
+  padding: 19px 12px;
+  background-color: white;
+  border: 1px solid #DEDEDE;
+}
+
+.header_container {
+  max-width: 1199px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.search_input {
+  height: 50px;
+  display: flex;
+  margin-left: 20px;
+
+  input {
+    border: 1px solid #D4D4D4;
+    border-right-color: transparent;
+    border-radius: 10px 0 0 10px;
+    padding: 15px 20px;
+    max-width: 375px;
+    width: 375px;
+
+    font-family: Inter;
+    font-size: 20px;
+  }
+
+  button {
+    background-color: white;
+    border: 1px solid #D4D4D4;
+    border-left-color: transparent;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    padding: 0 21px 0 21px;
+    cursor: pointer;
+
+    img {
+      transition-duration: .2s;
+    }
+
+    &:hover {
+      img {
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+.lang {
+  background-color: white;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #FF8A00;
+  border-radius: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  transition-duration: .2s;
+
+  svg path {
+    transition-duration: .2s;
+  }
+
+  &:hover {
+    background-color: #FF8A00;
+
+    svg path {
+      stroke: white;
+    }
+  }
+}
+
+.auth_links {
+  display: flex;
+  gap: 31px;
+  margin-left: 41px;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    font-family: Inter;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.create_account_link {
+  border: 2px solid #FF8A00;
+  border-radius: 10px;
+  padding: 10px 13px;
+  transition-duration: .2s;
+
+  &:hover {
+    background-color: #FF8A00;
+
+    color: white;
+  }
+}

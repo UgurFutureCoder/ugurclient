@@ -9,7 +9,7 @@ export const SignIn: FC = () => {
         <section className={s.sign_in}>
             <div className={s.sign_in_container}>
                 <div className={s.left_container}>
-                    <img className={s.logo} src={require('../../assets/Authorization/sign-in/Frame 1.svg').default} alt=""/>
+                    <img className={s.logo} src={require('../../assets/layout/header/Frame 1.svg').default} alt=""/>
                     <div className={s.left_content}>
                         <div className={s.top_content}>
                             <p className={s.header}>Get Started Now</p>
