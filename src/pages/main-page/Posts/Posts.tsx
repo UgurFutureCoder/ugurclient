@@ -221,28 +221,20 @@ export const Posts: FC = () => {
         {
             id: 4,
             img: '',
-            title: 'Прошу прощения у всех кто прочитал этот пост, пжпжпжпж, простите. Никита лох, не работает над проектом',
+            title: 'Саня, с др тебя бро и иди нахуй блять, педик блять',
             hashtags: [
                 {
                     id: 1,
-                    hashtag: '#sory'
+                    hashtag: '#гей'
                 },
                 {
                     id: 2,
-                    hashtag: '#смиренность'
+                    hashtag: '#блять'
                 },
                 {
                     id: 3,
-                    hashtag: '#угур'
-                },
-                {
-                    id: 4,
-                    hashtag: '#никита_лох'
-                },
-                {
-                    id: 5,
-                    hashtag: '#никиту_бум_бум'
-                },
+                    hashtag: '#залупо_головый'
+                }
             ],
             text: 'Make Database Studies Great Again!!!\n' +
                 'Table Of Contents\n' +
@@ -254,7 +246,7 @@ export const Posts: FC = () => {
                 '6. Final Considerations\n',
             author: {
                 uId: 'KFHKd8sfy8',
-                name: 'UgurAbb',
+                name: 'Danil Sadkov',
                 photo: require('../../../assets/main-page/posts/profile/Ellipse 1.svg').default,
             },
             comments: [
@@ -289,8 +281,8 @@ export const Posts: FC = () => {
                     time: '21:35',
                 },
             ],
-            date: 'may 24',
-            time: '4:29',
+            date: 'july 29',
+            time: '21:51',
             reactions: [
                 {
                     id: 1,
