@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {Burger} from "./burger/Burger";
 
 export const Header: FC = () => {
-    const [auth, setAuth] = useState(true);
+    const [auth, setAuth] = useState(false);
     const length: number = 0;
     const [isActiveBurger, setActiveBurger] = useState(false);
 

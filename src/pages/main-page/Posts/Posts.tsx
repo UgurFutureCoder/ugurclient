@@ -76,7 +76,7 @@ export const Posts: FC = () => {
         },
         {
             id: 2,
-            img: require('../../../assets/main-page/posts/bg-post/Снимок экрана 2023-07-18 в 15.38 1.svg').default,
+            img: '',
             title: 'Проект закрыт, всем пока. Спс за то, что были с нами',
             hashtags: [
                 {
