@@ -70,6 +70,12 @@
   gap: 8px;
 }
 
+.posts_container {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+}
+
 .filter_posts {
   display: flex;
   gap: 46px;
@@ -112,7 +118,7 @@
 }
 
 .post_author {
-  display: flex;
+  display: inline-flex;
   gap: 4px;
 
   font-family: Inter;
@@ -170,11 +176,17 @@
   width: 493px;
   margin-left: auto;
   margin-top: 25px;
+
+  font-family: Inter;
+  color: black;
+  font-weight: 700;
+  font-size: 12px;
 }
 
 .reactions {
   display: flex;
   gap: 25px;
+  align-items: center;
 }
 
 .reaction_smiles {
@@ -182,7 +194,38 @@
   display: flex;
 
   li:not(:first-child) {
-    position: relative;
-    right: 10px;
+    margin-left: -8px;
+  }
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+  gap: 5px;
+
+  color: black;
+  text-decoration: none;
+}
+
+.favorites {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+
+
+  input {
+    display: none;
+  }
+  div {
+    width: 15px;
+    height: 20px;
+    background: url('../../assets/main-page/posts/favorites/favorites.svg') no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  input:checked ~ div {
+    background: url('../../assets/main-page/posts/favorites/checked-favorites.svg') no-repeat;
   }
 }
