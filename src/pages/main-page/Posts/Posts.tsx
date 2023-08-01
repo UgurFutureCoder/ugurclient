@@ -306,6 +306,98 @@ export const Posts: FC = () => {
                 },
             ]
         },
+        {
+            id: 5,
+            img: '',
+            title: 'Ребят, плохие слова не надо нам писать, солнышко мммм',
+            hashtags: [
+                {
+                    id: 1,
+                    hashtag: '#солнышко'
+                },
+                {
+                    id: 2,
+                    hashtag: '#БЕЗ_матов'
+                },
+                {
+                    id: 3,
+                    hashtag: '#тише'
+                },
+                {
+                    id: 4,
+                    hashtag: '#тише'
+                },
+            ],
+            text: 'Make Database Studies Great Again!!!\n' +
+                'Table Of Contents\n' +
+                '1. Prologue\n' +
+                '2. There\'s much more possibilities than MySQL\n' +
+                '3. SQL vs NoSQL\n' +
+                '4. Choose Wisely\n' +
+                '5. The Coolest Database Paradigm\n' +
+                '6. Final Considerations\n',
+            author: {
+                uId: 'KFHKd8sfy8',
+                name: 'Danil Sadkov',
+                photo: require('../../../assets/main-page/posts/profile/Ellipse 1.svg').default,
+            },
+            comments: [
+                {
+                    id: 1,
+                    text: 'угур чё ты несёшь',
+                    author: {
+                        name: 'Danil Sadkov',
+                        photo: ''
+                    },
+                    date: 'july 14',
+                    time: '12:20',
+                },
+                {
+                    id: 2,
+                    text: 'Я тоже хотел подрочить на неё',
+                    author: {
+                        name: 'Danil Sadkov',
+                        photo: ''
+                    },
+                    date: 'july 14',
+                    time: '21:35',
+                },
+                {
+                    id: 3,
+                    text: 'Я тоже хотел подрочить на неё',
+                    author: {
+                        name: 'Danil Sadkov',
+                        photo: ''
+                    },
+                    date: 'july 14',
+                    time: '21:35',
+                },
+            ],
+            date: 'july 29',
+            time: '12:30',
+            reactions: [
+                {
+                    id: 1,
+                    img: require('../../../assets/main-page/posts/smiles/image 3.svg').default
+                },
+                {
+                    id: 2,
+                    img: require('../../../assets/main-page/posts/smiles/image 41.svg').default
+                },
+                {
+                    id: 3,
+                    img: require('../../../assets/main-page/posts/smiles/image 41.svg').default
+                },
+                {
+                    id: 4,
+                    img: require('../../../assets/main-page/posts/smiles/image 43.svg').default
+                },
+                {
+                    id: 5,
+                    img: require('../../../assets/main-page/posts/smiles/image 43.svg').default
+                },
+            ]
+        },
     ]
     const addNewFavorites = (e: any): void => {
         if (e.currentTarget.checked) {
