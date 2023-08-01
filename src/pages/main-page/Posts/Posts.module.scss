@@ -8,7 +8,7 @@
 .posts_container {
     display: flex;
     flex-direction: column;
-    gap: 54px;
+    gap: 10px;
 }
 
 .filter_posts {
@@ -39,11 +39,21 @@
     width: 595px;
     background-color: white;
     border: 1px solid #DEDEDE;
+    overflow: hidden;
+
+    &:first-child {
+        border-radius: 20px 20px 0 0;
+    }
+    &:last-child {
+        border-radius: 0 0 20px 20px;
+    }
 }
 
+
 .bg_post {
-    border-color: transparent;
-    border-bottom: 1px solid #DEDEDE;
+    // border-color: transparent;
+    // border-bottom: 1px solid #DEDEDE;
+    // border-radius: 20px 20px 0 0;
     width: 100%;
 }
 
