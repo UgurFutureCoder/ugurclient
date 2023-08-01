@@ -9,7 +9,6 @@ export const Layout: FC = () => {
         <main className='main_content_container'>
             <Outlet />
         </main>
-        <footer>Footer</footer>
     </div>
   )
 }
