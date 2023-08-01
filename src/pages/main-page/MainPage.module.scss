@@ -56,6 +56,13 @@
             width: 100%;
           }
         }
+
+      }
+      .active_link {
+        color: #FF8A00;
+        svg path {
+          stroke: #FF8A00;
+        }
       }
     }
   }
