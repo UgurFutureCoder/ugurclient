@@ -1,0 +1,165 @@
+.contact_container {
+    margin-left: 76px;
+    max-width: 761px;
+    width: 761px;
+}
+
+.contact_header {
+    margin-bottom: 26px;
+    text-align: center;
+
+    font-family: Inter;
+    color: #575757;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contact_form {
+    background-color: white;
+    padding: 21px 68px 85px 68px;
+    border: 1px solid #DEDEDE;
+}
+
+.input_container {
+    p {
+        margin-bottom: 5px;
+        margin-left: 13px;
+
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 700;
+        color: black;
+    }
+    input {
+        background-color: white;
+        border: 1px solid #DEDEDE;
+        border-radius: 10px;
+        padding: 10px 15px;
+        width: 270px;
+
+        font-family: Inter;
+        font-size: 17px;
+        color: black;
+    }
+}
+
+.your_info {
+    display: flex;
+
+    div:last-child {
+        margin-left: auto;
+    }
+}
+
+.message_container {
+    margin-top: 47px;
+
+    p {
+        margin-bottom: 5px;
+        margin-left: 13px;
+
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 700;
+        color: black;
+    }
+    textarea {
+        width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #DEDEDE;
+        border-radius: 10px;
+        resize: none;
+
+        font-family: Inter;
+        font-size: 17px;
+        color: black;
+    }
+}
+
+.contact_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_title {
+    align-items: center;
+    display: flex;
+}
+
+.contact_bottom {
+    margin-top: 40px;
+
+    font-family: Inter;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.contact_setting {
+    display: flex;
+    gap: 18px;
+}
+
+.accordion_admins {
+    position: relative;
+}
+
+.admins_list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition-duration: .5s;
+    border: 2px solid #DEDEDE;
+    border-radius: 10px;
+    top: 20px;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+
+    li {
+        transition-duration: .2s;
+        text-align: start;
+        padding: 11px 13px;
+        cursor: pointer;
+    }
+}
+
+.admins_list_active {
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.accordion_gal_active {
+    rotate: 180deg;
+}
+
+.selected_admin {
+    padding: 11px 15px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    border: 2px solid #DEDEDE;
+    border-radius: 10px;
+}
+
+.send_message_button {
+    padding: 10px 15px;
+    border: 2px solid #FF8A00;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: .2s;
+
+    font-family: Inter;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+
+    &:hover {
+        background-color: #FF8A00;
+        color: white
+    }
+}

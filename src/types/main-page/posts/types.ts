@@ -35,5 +35,9 @@ export namespace Types {
         time: string;
         reactions: IReactions[];
     }
+    export interface IAd {
+        id: number;
+        name: string;
+    }
 }
 

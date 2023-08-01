@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import s from './MainPage.module.scss'
-import {Link, NavLink, useActionData} from "react-router-dom";
+import {Link, NavLink, Routes, Route, Outlet} from "react-router-dom";
 import {Posts} from "./Posts/Posts";
 
 export const MainPage: FC = () => {
@@ -10,22 +10,20 @@ export const MainPage: FC = () => {
           <nav className={s.nav_bar}>
             <ul>
               <li>
-                <NavLink to='blog'>
+                <NavLink to='/'>
                   <img src={require('../../assets/main-page/nav-bar/Frame 10.svg').default} alt=""/>
                   <p>Blog</p>
                 </NavLink>
               </li>
               <li>
-                <Link to='blog'>
+                <NavLink to='contact'>
                   <img src={require('../../assets/main-page/nav-bar/Frame 11.svg').default} alt=""/>
-                  <p>Contacts</p>
-                </Link>
+                  <p>Contact</p>
+                </NavLink>
               </li>
             </ul>
           </nav>
-          <section className={s.blog_container}>
-            <Posts />
-          </section>
+          <Outlet />
         </div>
       </main>
   )

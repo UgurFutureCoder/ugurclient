@@ -1,5 +1,5 @@
 import React, {FC, useEffect, useState} from "react";
-import s from "../MainPage.module.scss";
+import s from "./Posts.module.scss";
 import {Types} from "../../../types/main-page/posts/types";
 import {Link} from "react-router-dom";
 
@@ -414,7 +414,7 @@ export const Posts: FC = () => {
     }, [favorite])
 
     return (
-        <>
+        <div className={s.posts}>
             <div className={s.filter_posts}>
                 <label htmlFor='latest' className={s.latest_lab}>
                     <input checked type="radio" name='filter-input' id='latest'/>
@@ -480,6 +480,6 @@ export const Posts: FC = () => {
                     ))
                 }
             </div>
-        </>
+        </div>
     )
 }
